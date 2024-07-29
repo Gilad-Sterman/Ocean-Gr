@@ -1,0 +1,78 @@
+.contact {
+    padding: 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-block: .5rem;
+    border-radius: .25rem;
+    // background-color: $clr-primary;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        margin-block: .5rem;
+        align-items: baseline;
+
+        @media (min-width: 640px) {
+            gap: .75rem;
+        }
+
+        span {
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+
+            @media (min-width: 640px) {
+                font-size: 4rem;
+            }
+        }
+
+        .small {
+            font-style: normal;
+            color: $clr-primary-1;
+            font-size: 1.5rem;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        margin-block: 1rem;
+        width: 100%;
+
+        .my-input {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            align-items: center;
+
+            label {
+                color: $clr-light;
+                width: 100px;
+                text-align: start;
+                
+                @media (min-width: 640px) {
+                    width: 150px;
+                }
+            }
+
+            input {
+                padding: .5rem 1rem;
+                border-radius: 1rem;
+                outline: none;
+                border: 1px solid $clr-secondary;
+            }
+
+            textarea {
+                padding: .5rem 1rem;
+                border-radius: 1rem;
+                outline: none;
+                border: 1px solid $clr-secondary;
+            }
+        }
+    }
+}

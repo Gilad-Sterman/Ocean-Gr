@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    // direction: rtl;
+    scroll-behavior: smooth;
+}
+
+// html {
+//     width: 100%;
+// }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: $clr-bg;
+    background-color: $clr-bg;
+    text-align: start;
+    overflow-x: hidden;
+    // width: 100%;
+}
+
+.eng {
+    direction: ltr;
+    font-family: 'Jost', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: .25em 0 .25em;
+    color: $clr-white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 750px;
+}
+
+h1 {
+    font-size: 4rem;
+
+    @media (max-width: 500px) {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 60px;
+    width: max-content;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: auto;
+    margin-block: .5rem;
+}
+
+p {
+    color: $clr-accent;
+    margin: 0 0 1em;
+
+    @media (max-width: 500px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+span {
+    color: $clr-white;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5rem;
+    color: $clr-white;
+    font-weight: bold;
+    margin: 0;
+    padding: .75rem 1.5rem;
+    gap: .5rem;
+    background-color: $clr-primary;
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+        transition: .3s;
+        background-color: $clr-secondary;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $clr-bg;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 0px;
+}
+
+
+
+/* Dont stretch my Media */
+img,
+embed,
+video,
+object {
+    max-width: 100%
+}
+
+/* Simple and useful CSS Debugging Technique */
+.debug * {
+    outline: 1px solid gold
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+
+input:focus {
+    background-color: $clr-accent-light;
+    transition: background-color 1s;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        left: 20px;
+        font-size: 22px;
+    }
+}

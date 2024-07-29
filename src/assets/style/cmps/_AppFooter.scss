@@ -1,0 +1,107 @@
+.app-footer {
+    background-color: $clr-primary;
+    padding: 1rem;
+    text-align: justify;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        .top {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+            justify-content: center;
+
+            h4 {
+                color: $clr-white;
+                margin: 0;
+            }
+
+            @media (min-width: 640px) {
+                flex-direction: column;
+            }
+        }
+
+        p {
+            color: $clr-accent-light;
+            text-align: start;
+        }
+
+        @media (min-width: 640px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .contact-info {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: .5rem;
+            flex-direction: column;
+            align-items: center;
+
+            .info {
+                display: flex;
+                gap: .25rem;
+                flex-direction: column;
+
+                img {
+                    align-self: center;
+                }
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+            }
+
+            a {
+                color: $clr-accent-light;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            @media (min-width: 640px) {
+                flex-direction: row;
+                // flex-grow: 1;
+                gap: 2rem;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #ddd;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            color: $clr-light;
+        }
+
+        a {
+            color: $clr-accent-light;
+        }
+    }
+
+    @media (max-width: 640px) {
+
+        .footer-bottom {
+
+            nav {
+                display: none;
+            }
+
+            justify-content: center;
+        }
+    }
+}

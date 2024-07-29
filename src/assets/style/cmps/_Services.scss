@@ -1,0 +1,113 @@
+.services {
+    padding: 2rem;
+    text-align: center;
+    padding-top: 90px;
+    position: relative;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 1rem;
+
+        .line {
+            display: flex;
+            gap: .5rem;
+            align-items: baseline;
+
+            &.first {
+                margin-inline-end: 3rem;
+
+                @media (min-width: 520px) {
+                    margin-inline-end: 6rem;
+                }
+
+                @media (min-width: 640px) {
+                    margin-inline-end: 12rem;
+                }
+            }
+
+            &.second {
+                margin-inline-start: 3rem;
+
+                @media (min-width: 520px) {
+                    margin-inline-start: 6rem;
+                }
+
+                @media (min-width: 640px) {
+                    margin-inline-start: 12rem;
+                }
+            }
+
+            @media (min-width: 640px) {
+                gap: .74rem;
+            }
+        }
+
+        span {
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+
+            @media (min-width: 640px) {
+                font-size: 4rem;
+            }
+        }
+
+        .small {
+            font-style: normal;
+            color: $clr-primary-1;
+            font-size: 1.5rem;
+        }
+    }
+
+    .service-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 100%;
+            transition: .6s;
+            background-color: $clr-trans;
+            filter: opacity(.5);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+                rgba(0, 0, 0, 0.14) 0px 4px 5px 0px,
+                rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+
+
+            .service-image {
+                margin: auto;
+                margin-top: 1rem;
+                width: 70%;
+                border-radius: 8px;
+                max-height: 450px;
+            }
+
+            &.selected {
+                filter: opacity(1);
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+
+    .service-details {
+        align-self: center;
+    }
+}
