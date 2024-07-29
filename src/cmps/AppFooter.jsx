@@ -4,7 +4,7 @@ export function AppFooter({ showForm, setShowForm }) {
             <div className="footer-content">
                 <div className="top">
                 <h4>OCEAN Group</h4>
-                <p>Aerial Inspections.<br />Remote Sensing.<br />3D Mapping Solutions.</p>
+                {/* <p>Aerial Inspections.<br />Remote Sensing.<br />3D Mapping Solutions.</p> */}
                 </div>
                 <div className="contact-info">
                     <div className="info email">

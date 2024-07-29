@@ -31,7 +31,7 @@ export function Services() {
                     <span className="small">Sensing</span>
                 </div>
             </div>
-            <div className="service-container" data-aos="fade-up">
+            <div className="service-container" data-aos="slide-up">
                 {services.map((service, index) => (
                     <div key={index} className={`service-card c${index + 1} ${selected.title === service.title ? 'selected' : ''}`} onClick={() => setSelected(service)}>
                         <h4>{service.title}</h4>

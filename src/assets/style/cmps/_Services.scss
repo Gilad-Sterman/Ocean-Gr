@@ -16,7 +16,7 @@
             align-items: baseline;
 
             &.first {
-                margin-inline-end: 3rem;
+                // margin-inline-end: 3rem;
 
                 @media (min-width: 520px) {
                     margin-inline-end: 6rem;
@@ -28,7 +28,7 @@
             }
 
             &.second {
-                margin-inline-start: 3rem;
+                // margin-inline-start: 3rem;
 
                 @media (min-width: 520px) {
                     margin-inline-start: 6rem;
@@ -101,9 +101,9 @@
                 filter: opacity(1);
             }
 
-            &:hover {
-                transform: translateY(-10px);
-            }
+            // &:hover {
+            //     transform: translateY(-10px);
+            // }
         }
     }
 

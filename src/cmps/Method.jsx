@@ -22,7 +22,7 @@ export function Method() {
                     <span className="small">Our</span>
                     <span>Method</span>
             </div>
-            <ul className="stage-list" data-aos="slide-left">
+            <ul className="stage-list" data-aos="fade-up">
                 {stages.map((stage, index) => (
                     <li key={index} className={`stage-item s${index + 1}`} >
                         <img className="stage-img" src={stage.imgUrl} alt={stage.title} />
