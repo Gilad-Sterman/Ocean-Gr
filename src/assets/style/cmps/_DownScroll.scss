@@ -1,11 +1,27 @@
+@keyframes down {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -10px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
 .down-scroll {
-    // position: absolute;
-    // bottom: 10%;
-    // left: 50%;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 5;
+    animation: down 2s infinite;
 
     a {
-        background-color: $clr-txt-g;
+        background-color: $clr-primary;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19,7 +35,7 @@
         }
 
         &:hover {
-            transform: translateY(10px);
+            background-color: $clr-bg;
         }
     }
 }

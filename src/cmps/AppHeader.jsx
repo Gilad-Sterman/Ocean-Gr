@@ -28,6 +28,7 @@ export function AppHeader({ showForm, setShowForm }) {
             <nav className={menuOpen ? 'open' : ''}>
                 <a href="#services">Services</a>
                 <a href="#method">Our Method</a>
+                <a href="#testimonials">Testimonials</a>
                 <a href="#team">Our Team</a>
                 <a href="#contact">Contact</a>
             </nav>

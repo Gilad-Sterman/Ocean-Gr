@@ -1,17 +1,19 @@
 .hero {
     position: relative;
-    grid-template-columns: 1fr 2fr;
-    padding: 1rem;
     min-height: 700px;
 
     .txt {
         position: absolute;
         left: 30px;
+        top: 10%;
         z-index: 5;
 
         h3 {
             font-size: 2rem;
 
+            span {
+                color: $clr-primary1;
+            }
         }
 
         @media (min-width: 640px) {
@@ -21,7 +23,7 @@
                 font-size: 4rem;
             }
         }
-        
+
         @media (min-width: 1000px) {
             left: 50%;
             top: 30%;
@@ -78,12 +80,7 @@
 
     .hero-img {
         width: 100%;
-        max-height: 800px;
-        border-radius: .5rem;
-        filter: opacity(.7);
-    }
-
-    @media (min-width: 640px) {
-        padding: 1rem;
+        height: calc(100vh - 80px);
+        filter: opacity(.6);
     }
 }

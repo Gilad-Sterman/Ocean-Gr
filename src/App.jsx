@@ -6,15 +6,14 @@ import { AppHeader } from './cmps/AppHeader'
 import { Hero } from './cmps/Hero'
 import { Method } from './cmps/Method'
 import { Services } from './cmps/Services'
-import { About } from './cmps/About'
 import { AppFooter } from './cmps/AppFooter'
 import { Team } from './cmps/Team'
 import { ContactForm } from './cmps/ContactForm'
 import { Contact } from './cmps/Contact'
+import { Testimonials } from './cmps/Testimonials'
 
 
 function App() {
-  const [showForm, setShowForm] = useState(false)
 
   useEffect(() => {
     AOS.init({
@@ -27,14 +26,14 @@ function App() {
   return (
     <>
       <section className='full-Page'>
-        <AppHeader showForm={showForm} setShowForm={setShowForm}/>
-        <Hero showForm={showForm} setShowForm={setShowForm}/>
+        <AppHeader />
+        <Hero />
         <Services />
         <Method />
+        <Testimonials />
         <Team />
         <Contact />
-        <AppFooter showForm={showForm} setShowForm={setShowForm}/>
-        {showForm && <ContactForm showForm={showForm} setShowForm={setShowForm} />}
+        <AppFooter />
       </section>
     </>
   )
